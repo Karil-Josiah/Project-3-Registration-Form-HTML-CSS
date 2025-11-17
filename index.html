@@ -3,18 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
     <div class="container">
-      <div><h1>REGISTRATION FORM</h1></div>
+      <h1>REGISTRATION FORM</h1>
+
       <form>
-        <input type="text" name="username" placeholder="Enter Name" />
-        <input type="email" name="useremail" placeholder="Enter Email" />
-        <input type="number" name="numberphone" placeholder="Enter Phone" />
-        <input type="password" name="password" placeholder="Enter password" />
-        <input type="submit" name="submit" value="Register" id="submit" />
+        <input type="text" name="username" placeholder="Full Name" required />
+        <input
+          type="email"
+          name="useremail"
+          placeholder="Email Address"
+          required
+        />
+        <input
+          type="tel"
+          name="numberphone"
+          placeholder="Phone Number"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Register" id="submit" />
       </form>
     </div>
   </body>
